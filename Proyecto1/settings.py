@@ -82,11 +82,11 @@ DEBUG = False
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ.get('PGDATABASE'),
-        'USER': os.environ.get('Khioya'),
-        'PASSWORD': os.environ.get('POSTPasswordMac2012'),
-        'HOST': os.environ.get('PGHOST'),
-        'PORT': os.environ.get('PGPORT'),
+        'NAME': os.environ.get('basededatoskhioya'),
+        'USER': os.environ.get('basededatoskhioya_user'),
+        'PASSWORD': os.environ.get('aSlj4HWfmXanAYcmZsazfl2xS4WYYG0Y'),
+        'HOST': os.environ.get('dpg-d14rmg15pdvs73bu7n7g-a'),
+        'PORT': os.environ.get('5432'),
     }
 }
 
