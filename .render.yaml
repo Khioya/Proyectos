@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: ServicioKhioya
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn Proyecto1.wsgi:application
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: Proyecto1.settings
+      - fromDatabase:
+          name: BaseDatos1
+          property: connectionString
