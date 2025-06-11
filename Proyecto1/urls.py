@@ -18,8 +18,10 @@ from django.contrib import admin
 from django.urls import path
 from django.conf import settings
 from django.views.static import serve
+from Proyecto1.views.home import home  # ajusta a tu app
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', home, name='home'),
     path('favicon.ico', serve, {'path': 'favicon.ico', 'document_root': settings.STATICFILES_DIRS[0]}),
 ]
