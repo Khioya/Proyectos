@@ -74,7 +74,7 @@ WSGI_APPLICATION = 'Proyecto1.wsgi.application'
 
 import os
 
-ALLOWED_HOSTS = ['ServicioKhioya.onrender.com']
+ALLOWED_HOSTS = ['proyectos-h4vy.onrender.com', '127.0.0.1', 'localhost']
 
 DEBUG = False
 
